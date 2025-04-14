@@ -22,8 +22,18 @@ public class ClassTransformerTest {
                 return new MethodVisitor(ASM4, mv) {
                     @Override
                     public void visitCode() {
-                        visitMethodInsn(INVOKESTATIC, "com/mashibing/dp/ASM/TimeProxy","before", "()V", false);
+                        if(name.equals("move")) {
+                            visitMethodInsn(INVOKESTATIC, "com/mashibing/dp/ASM/TimeProxy","before", "()V", false);
+                        }
                         super.visitCode();
+                    }
+
+                    @Override
+                    public void visitInsn(int opcode) {
+                        if(name.equals("move")) {
+                            visitMethodInsn(INVOKESTATIC, "com/mashibing/dp/ASM/TimeProxy","after", "()V", false);
+                        }
+                        super.visitInsn(opcode);
                     }
                 };
             }
