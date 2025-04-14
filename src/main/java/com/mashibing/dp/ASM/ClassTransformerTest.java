@@ -29,6 +29,7 @@ public class ClassTransformerTest {
             }
         };
 
+        //先cw 再cv 查看字节码的变化!
         cr.accept(cv, 0);
         byte[] b2 = cw.toByteArray();
 
