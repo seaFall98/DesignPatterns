@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Servlet_Main {
     public static void main(String[] args) {
+        //仿javax servlet的写法
         Request request = new Request();
         request.str = "大家好:)，<script>，欢迎访问 mashibing.com ，大家都是996 ";
         Response response = new Response();
@@ -30,7 +31,7 @@ class HTMLFilter implements Filter {
     }
 }
 
-class Request {
+class   Request {
     String str;
 }
 

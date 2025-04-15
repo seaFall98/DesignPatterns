@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3f28c2-5c05-45ba-b13d-edfcf255266f" name="Default Changelist" comment="添加了after">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/ASM/ClassTransformerTest2.java" afterDir="false" />
+    <list default="true" id="bd3f28c2-5c05-45ba-b13d-edfcf255266f" name="Default Changelist" comment="待解决">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v1/Servlet_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v1/Servlet_Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v2/readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v2/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v3/Servlet_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v3/Servlet_Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v4/Servlet_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v4/Servlet_Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,9 +200,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectFrameBounds">
     <option name="x" value="242" />
     <option name="y" value="4" />
@@ -323,6 +326,7 @@
     "应用程序.ClassTransformerTest.executor": "Run",
     "应用程序.ClassTransformerTest2.executor": "Run",
     "应用程序.ClassWriteTest.executor": "Run",
+    "应用程序.Servlet_Main.executor": "Run",
     "应用程序.com.mashibing.dp.ASM.Main.executor": "Run"
   }
 }]]></component>
@@ -334,13 +338,6 @@
       <recent name="com.mashibing.dp.simplefactory" />
       <recent name="com.mashibing.strategy" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mashibing.dp.state.thread" />
-      <recent name="com.mashibing.dp.state.v2" />
-      <recent name="com.mashibing.dp.command" />
-      <recent name="com.mashibing.dp.Iterator.v3" />
-      <recent name="com.mashibing.dp.spring" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mac\IdeaProjects\DesignPatterns\src\main\java\com\mashibing\dp\prototype\v4" />
       <recent name="C:\Users\mac\IdeaProjects\DesignPatterns\src\main\java\com\mashibing\dp\prototype\v3" />
@@ -348,13 +345,20 @@
       <recent name="C:\Users\mac\IdeaProjects\DesignPatterns\src\main\java\com\mashibing\dp\cor\servlet\v4" />
       <recent name="C:\Users\mac\IdeaProjects\DesignPatterns\src\main\java\com\mashibing\dp\cor\servlet\v3" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mashibing.dp.state.thread" />
+      <recent name="com.mashibing.dp.state.v2" />
+      <recent name="com.mashibing.dp.command" />
+      <recent name="com.mashibing.dp.Iterator.v3" />
+      <recent name="com.mashibing.dp.spring" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="bytecode " />
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.ClassTransformerTest2">
+  <component name="RunManager" selected="应用程序.Servlet_Main">
     <configuration name="ClassPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.ASM.ClassPrinter" />
       <module name="DesignPatterns" />
@@ -408,19 +412,6 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.spring.v1.Main" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.dp.spring.v1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.factorymethod.Main" />
       <module name="DesignPatterns" />
       <extension name="coverage">
@@ -433,12 +424,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.mashibing.dp.ASM.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.ASM.Main" />
+    <configuration name="Servlet_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.cor.servlet.v3.Servlet_Main" />
       <module name="DesignPatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.dp.ASM.*" />
+          <option name="PATTERN" value="com.mashibing.dp.cor.servlet.v3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -448,11 +439,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Servlet_Main" />
         <item itemvalue="应用程序.ClassTransformerTest2" />
         <item itemvalue="应用程序.ClassTransformerTest" />
         <item itemvalue="应用程序.ClassPrinter" />
         <item itemvalue="应用程序.ClassWriteTest" />
-        <item itemvalue="应用程序.com.mashibing.dp.ASM.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +466,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556253030883</updated>
-      <workItem from="1744653826519" duration="8914000" />
+      <workItem from="1744653826519" duration="8966000" />
+      <workItem from="1744715916286" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式之责任链，代码写到60%，请大家自己根据视频尝试完成com.mashibing.dp.cor.servlet包下面的servletFilter的写法">
       <created>1556285498852</created>
@@ -549,7 +541,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744663012524</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="待解决">
+      <option name="closed" value="true" />
+      <created>1744663420465</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744663420465</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -581,6 +581,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="设计模式之责任链，代码写到60%，请大家自己根据视频尝试完成com.mashibing.dp.cor.servlet包下面的servletFilter的写法" />
     <MESSAGE value="设计模式之Singleton和Strategy" />
@@ -588,7 +599,8 @@
     <MESSAGE value="设计模式继续" />
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="添加了after" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了after" />
+    <MESSAGE value="待解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="待解决" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

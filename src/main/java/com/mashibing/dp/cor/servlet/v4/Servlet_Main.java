@@ -19,6 +19,7 @@ public class Servlet_Main {
     }
 }
 
+//只在Filter里设置FilterChain
 interface Filter {
     void doFilter(Request request, Response response, FilterChain chain);
 }
@@ -51,7 +52,7 @@ class SensitiveFilter implements Filter {
     }
 }
 
-
+//不再需要实现Filter接口了
 class FilterChain {
     List<Filter> filters = new ArrayList<>();
     int index = 0;
@@ -61,11 +62,12 @@ class FilterChain {
         return this;
     }
 
+    //去掉了返回值 不再需要传chain参数
     public void doFilter(Request request, Response response) {
         if(index == filters.size()) return;
         Filter f = filters.get(index);
         index ++;
-
+        //直接传this
         f.doFilter(request, response, this);
     }
 }

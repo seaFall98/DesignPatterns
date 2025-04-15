@@ -45,7 +45,9 @@ class SensitiveFilter implements Filter {
     @Override
     public boolean doFilter(Request request, Response response, FilterChain chain) {
         request.str = request.str.replaceAll("996", "955") + " SensitiveFilter()";
+        //在责任链处理过程中，先doFilter
         chain.doFilter(request, response, chain);
+       //再处理response
         response.str += "--SensitiveFilter()";
         return true;
     }
@@ -54,6 +56,7 @@ class SensitiveFilter implements Filter {
 
 class FilterChain implements Filter {
     List<Filter> filters = new ArrayList<>();
+    //通过index就可以实现response3->2->1的处理了
     int index = 0;
 
     public FilterChain add(Filter f) {
