@@ -2,6 +2,7 @@ package com.mashibing.dp.prototype.v3;
 
 /**
  * String需要进一步深克隆吗？
+ * String常量池知识 不会有影响
  */
 public class Test {
     public static void main(String[] args) throws Exception {

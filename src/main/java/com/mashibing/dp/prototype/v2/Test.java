@@ -10,8 +10,10 @@ public class Test {
         System.out.println(p2.age + " " + p2.score);
         System.out.println(p2.loc);
 
+        //false 引用类型实现了深克隆
         System.out.println(p1.loc == p2.loc);
         p1.loc.street = "sh";
+        //p1的修改不影响p2 实现了独立性
         System.out.println(p2.loc);
 
 
@@ -27,11 +29,13 @@ class Person implements Cloneable {
     @Override
     public Object clone() throws CloneNotSupportedException {
         Person p = (Person)super.clone();
+        //loc属性也单独调用clone()方法
         p.loc = (Location)loc.clone();
         return p;
     }
 }
 
+//Location类也实现Cloneable接口
 class Location implements Cloneable {
     String street;
     int roomNo;

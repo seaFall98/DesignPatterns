@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3f28c2-5c05-45ba-b13d-edfcf255266f" name="Default Changelist" comment="待解决">
+    <list default="true" id="bd3f28c2-5c05-45ba-b13d-edfcf255266f" name="Default Changelist" comment="servlet责任链模式简单模拟">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v1/Servlet_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v1/Servlet_Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v2/readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v2/readme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v3/Servlet_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v3/Servlet_Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v4/Servlet_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/cor/servlet/v4/Servlet_Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/builder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/builder/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/builder/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/builder/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/builder/TerrainBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/builder/TerrainBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v1/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v2/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v3/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v4/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/dp/prototype/v4/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +330,11 @@
     "应用程序.ClassTransformerTest2.executor": "Run",
     "应用程序.ClassWriteTest.executor": "Run",
     "应用程序.Servlet_Main.executor": "Run",
-    "应用程序.com.mashibing.dp.ASM.Main.executor": "Run"
+    "应用程序.Test.executor": "Run",
+    "应用程序.com.mashibing.dp.ASM.Main.executor": "Run",
+    "应用程序.com.mashibing.dp.prototype.v2.Test.executor": "Run",
+    "应用程序.com.mashibing.dp.prototype.v3.Test.executor": "Run",
+    "应用程序.com.mashibing.dp.prototype.v4.Test.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -358,72 +365,7 @@
       <command value="bytecode " />
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.Servlet_Main">
-    <configuration name="ClassPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.ASM.ClassPrinter" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.dp.ASM.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassTransformerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.ASM.ClassTransformerTest" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.dp.ASM.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassTransformerTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.ASM.ClassTransformerTest2" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.dp.ASM.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassWriteTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.ASM.ClassWriteTest" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.dp.ASM.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.factorymethod.Main" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.dp.factorymethod.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.com.mashibing.dp.prototype.v4.Test">
     <configuration name="Servlet_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.cor.servlet.v3.Servlet_Main" />
       <module name="DesignPatterns" />
@@ -437,13 +379,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.prototype.v1.Test" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.dp.prototype.v1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.mashibing.dp.prototype.v2.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.prototype.v2.Test" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.dp.prototype.v2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.mashibing.dp.prototype.v3.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.prototype.v3.Test" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.dp.prototype.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.mashibing.dp.prototype.v4.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.dp.prototype.v4.Test" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.dp.prototype.v4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.com.mashibing.dp.prototype.v4.Test" />
+        <item itemvalue="应用程序.com.mashibing.dp.prototype.v3.Test" />
+        <item itemvalue="应用程序.com.mashibing.dp.prototype.v2.Test" />
+        <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.Servlet_Main" />
-        <item itemvalue="应用程序.ClassTransformerTest2" />
-        <item itemvalue="应用程序.ClassTransformerTest" />
-        <item itemvalue="应用程序.ClassPrinter" />
-        <item itemvalue="应用程序.ClassWriteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -467,7 +461,8 @@
       <option name="presentableId" value="Default" />
       <updated>1556253030883</updated>
       <workItem from="1744653826519" duration="8966000" />
-      <workItem from="1744715916286" duration="1874000" />
+      <workItem from="1744715916286" duration="2967000" />
+      <workItem from="1744728398826" duration="7494000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式之责任链，代码写到60%，请大家自己根据视频尝试完成com.mashibing.dp.cor.servlet包下面的servletFilter的写法">
       <created>1556285498852</created>
@@ -549,7 +544,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744663420465</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="servlet责任链模式简单模拟">
+      <option name="closed" value="true" />
+      <created>1744717808816</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744717808816</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -600,7 +603,8 @@
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="添加了after" />
     <MESSAGE value="待解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="待解决" />
+    <MESSAGE value="servlet责任链模式简单模拟" />
+    <option name="LAST_COMMIT_MESSAGE" value="servlet责任链模式简单模拟" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

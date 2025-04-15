@@ -10,6 +10,7 @@ public class Test {
         System.out.println("p1.loc == p2.loc? " + (p1.loc == p2.loc));
 
         p1.loc.street.reverse();
+        //p1和p2指向的是同一个StringBuilder对象,所以p1的修改就影响到了p2!
         System.out.println(p2.loc.street);
     }
 }
@@ -28,6 +29,7 @@ class Person implements Cloneable {
 }
 
 class Location implements Cloneable {
+    //把String换成了StringBuilder 对比v3的变化如何？
     StringBuilder street;
     int roomNo;
 
